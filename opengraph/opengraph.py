@@ -1,11 +1,8 @@
 # encoding: utf-8
 
 import re
-import urllib2
-try:
-    from bs4 import BeautifulSoup
-except ImportError:
-    from BeautifulSoup import BeautifulSoup
+from urllib.request import urlopen
+from bs4 import BeautifulSoup
 
 global import_json
 try:
@@ -47,7 +44,7 @@ class OpenGraph(dict):
     def fetch(self, url):
         """
         """
-        raw = urllib2.urlopen(url)
+        raw = urlopen(url)
         html = raw.read()
         return self.parser(html)
         
@@ -82,7 +79,7 @@ class OpenGraph(dict):
             return u"<meta property=\"og:error\" content=\"og metadata is not valid\" />"
             
         meta = u""
-        for key,value in self.iteritems():
+        for key,value in self.items():
             meta += u"\n<meta property=\"og:%s\" content=\"%s\" />" %(key, value)
         meta += u"\n"
         

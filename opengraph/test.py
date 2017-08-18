@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 import unittest
-import opengraph
+from opengraph import opengraph
 
 
 HTML = """
@@ -12,6 +12,7 @@ HTML = """
 <meta property="og:type" content="movie" />
 <meta property="og:url" content="http://www.imdb.com/title/tt0117500/" />
 <meta property="og:image" content="http://ia.media-imdb.com/images/rock.jpg" />
+<meta property="og:description" content="some description" />
 </head>
 </html>
 """
