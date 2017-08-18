@@ -25,6 +25,10 @@ setup(name='opengraph',
       install_requires=[
           'beautifulsoup4'
       ],
+      test_suite="nose.collector",
+      tests_require=[
+            "nose==1.3.7"
+      ],
       entry_points="""
       # -*- Entry points: -*-
       """,
