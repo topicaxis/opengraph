@@ -69,7 +69,7 @@ class OpenGraph(dict):
                         pass
 
     def valid_attr(self, attr):
-        return hasattr(self, attr) and len(self[attr]) > 0
+        return (attr in self) and len(self[attr]) > 0
 
     def is_valid(self):
         return all([self.valid_attr(attr) for attr in self.required_attrs])
