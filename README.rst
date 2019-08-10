@@ -1,3 +1,5 @@
+Topicaxis-opengraph is a fork of https://github.com/erikriver/opengraph that adds support for Python 3.
+
 OpenGraph is a module of python for parsing the Open Graph Protocol, you can read more about the specification at http://ogp.me/
 
 Installation
