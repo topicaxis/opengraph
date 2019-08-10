@@ -8,6 +8,7 @@ setup(name='opengraph',
       description="A module to parse the Open Graph Protocol",
       long_description=open("README.rst").read() + "\n",
       classifiers=[
+      'License :: OSI Approved :: MIT License',
       'Development Status :: 3 - Alpha',
       'Intended Audience :: Developers',
       'Programming Language :: Python',
