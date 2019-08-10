@@ -7,7 +7,7 @@ Installation
 
 .. code-block:: console
 
-   $ pip install opengraph
+   $ pip install topicaxis-opengraph
 
 Features
 =============
